@@ -5,7 +5,7 @@
         <meta name="description" content="Restaurants, food menu">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link href="public/css/prefixed/style.css" type="text/css" rel="stylesheet">
+        <link href="./public/css/prefixed/style.css" type="text/css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Orbitron:wght@400;800&family=Oswald:wght@200;500&family=Pacifico&family=Shrikhand&display=swap" rel="stylesheet">
@@ -22,24 +22,25 @@
             <div class="loader__spin--3"></div>
         </div>
         <header>
-            <picture class="header__logo">
-                <img src="./public/images/logo/ohmyfood.png" alt="logo"/>
+            <picture class="header">
+                <img  class="header__logo" src="./public/images/logo/ohmyfood.png" alt="logo"/>
             </picture>
-            <div class="search">
+
+            <div class="header__search">
                 <i class="fa-solid fa-location-dot"></i>
                 <div class="search__bar">
                     <h3>Paris, Belleville</h3>
                 </div>
             </div>
-        </header>
-        <main>
-            <section class="hero">
+            <section class="header__hero">
                 <aside>
                     <h1>Book the menu you like</h1>
                     <p>Discover top-of-the-art restaurants we picked for you</p>
                     <button>Explore our restaurants</button>
                 </aside>
             </section>
+        </header>
+        <main>
             <section class="steps">
                 <h2>How it works</h2>
                 <ol class="steps__button">
@@ -130,8 +131,8 @@
             </section>
         </main>
         <footer>
-            <div class="footer__logo">
-                    <img src="./public/images/logo/ohmyfood.png" alt="logo"/>
+            <div class="footer">
+                <h3>ohmyfood</h3>
                 <ul class="footer_items">
                     <li>
                         <i class="fa-solid fa-utensils"></i><a href="#">Suggest a restaurant</a>
@@ -143,7 +144,7 @@
                         <a href="#">Legal</a>
                     </li>
                     <li>
-                        <a href="#">Contact</a>
+                        <a href="mailto:email@example.com">Contact</a>
                     </li>
                 </ul>
             </div>

@@ -5,7 +5,7 @@
         <meta name="description" content="Restaurants, food menu">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link href="public/css/prefixed/style.css" type="text/css" rel="stylesheet">
+        <link href="../public/css/prefixed/style.css" type="text/css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Orbitron:wght@400;800&family=Oswald:wght@200;500&family=Pacifico&family=Shrikhand&display=swap" rel="stylesheet">
@@ -17,20 +17,21 @@
     </head>
     <body>
         <header>
-            <div class="header__navigation">
-                <a href="../index.html" aria-label="index page"><i class="fa-solid fa-arrow-left"></i></a>
+            <div class="header">
+                <div class="header__navigation">
+                    <a href="../index.html" aria-label="index page"><i class="fa-solid fa-arrow-left"></i></a>
+                    <img  class="header__logo" src="../public/images/logo/ohmyfood.png" alt="logo"/>
+                </div>
+
             </div>
-            <div class="header__logo">
-                <img src="../public/images/logo/ohmyfood.png" alt="logo"/>
-            </div>
-        </header>
-        <main>
             <picture class="hero__img">
                 <img src="../public/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="plate with eggs benedict"/>
             </picture>
+        </header>
+        <main>
             <div class="container menu">
                 <section class="menu_head">
-                    <h2>Bastille</h2>
+                    <h1>Bastille</h1>
                     <div class="heart">
                         <i class="fa-heart far"></i>
                         <i class="fa-heart fas"></i>
@@ -131,8 +132,8 @@
             </div>
         </main>
         <footer>
-            <div class="footer__logo">
-                    <img src="./public/images/logo/ohmyfood.png" alt="logo"/>
+            <div class="footer">
+                <h3>ohmyfood</h3>
                 <ul class="footer_items">
                     <li>
                         <i class="fa-solid fa-utensils"></i><a href="#">Suggest a restaurant</a>
@@ -144,7 +145,7 @@
                         <a href="#">Legal</a>
                     </li>
                     <li>
-                        <a href="#">Contact</a>
+                        <a href="mailto:email@example.com">Contact</a>
                     </li>
                 </ul>
             </div>
