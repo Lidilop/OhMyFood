@@ -1,27 +1,114 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-.header__logo {
+.steps {
+  margin: 0 10% 0 0;
+}
+.steps h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10%;
+  margin-left: 5%;
+}
+.steps__button {
   display: flex;
-  justify-content: center;
-  margin: 10px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+@media (max-width: 992px) {
+  .steps__button {
+    flex-direction: column;
+    padding: 1rem;
+  }
+}
+.steps__btn {
+  margin: 5%;
+  padding: 2%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
   width: 100%;
+  background-color: #f6f6f6;
+  border-radius: 20px;
+  box-shadow: 2px 2px 14px 0 #d0d0d0;
+  font-weight: 500;
+  position: relative;
+  transition: 0.3s;
+}
+.steps__btn .number {
+  color: #fff;
+  background-color: #9356dc;
+  border-radius: 20px;
+  padding: 3px 7px;
+  font-size: 13px;
+  font-weight: 400;
+  position: absolute;
+  left: -10px;
+}
+.steps__btn .fa-solid {
+  margin-left: 7%;
+  font-size: 15px;
+  color: rgb(120, 118, 118);
+  transition: 0.3s;
+}
+.steps__btn h3 {
+  font-size: 17px;
+  font-weight: bold;
+  margin: 0 0 0 2%;
+  padding: 5% 5%;
+}
+.steps__btn:hover {
+  background-color: #f4d4ee;
+}
+
+.restaurants {
+  padding: 0;
+  margin: 0;
+  background-color: #f6f6f6;
+  display: flex;
+  flex-wrap: wrap;
+}
+.restaurants__cards {
+  max-width: 500px;
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 330px;
+  margin: auto;
+  display: block;
+  color: inherit;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+}
+.restaurants h2 {
+  font-size: 25px;
+  font-weight: bold;
+  margin-left: 5%;
+}
+.restaurants__rest-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 footer {
   margin: 0;
   background-color: #353535;
   color: #fff;
+  height: 270px;
 }
 footer .footer {
   width: 400px;
   margin-left: 20px;
-  margin-top: 10px;
 }
 footer h3 {
   color: #fff;
   font-size: 30px;
   font-family: "Shrikhand";
-  margin: 20px 0 0 20px;
+  margin: 30px 0 0 0px;
   padding: 20px;
 }
 footer ul {
@@ -56,14 +143,18 @@ header {
 .header__hero h1 {
   font-size: 20px;
   font-weight: bold;
+  margin-bottom: 10%;
 }
 .header__hero button {
   background: linear-gradient(to top, #9356dc, #ff79da);
   color: #f5edff;
   font-size: 15px;
   padding: 4%;
-  border: 1px solid transparent;
-  border-radius: 15px;
+  margin: 7% 0%;
+  border: none;
+  border-radius: 20px;
+  font-weight: 500;
+  box-shadow: 0px 7px 17px 2px #d3cdd2;
 }
 .header__search {
   margin: 0;
@@ -80,7 +171,7 @@ header {
 }
 .header__logo {
   align-items: center;
-  margin-left: 20%;
+  margin: 0 10%;
   padding: 5%;
   width: 60%;
 }
@@ -93,9 +184,11 @@ header {
 }
 .header__navigation .fa-solid {
   position: relative;
-  margin: 25% 5% 0 5%;
+  margin: 35% 5% 0 5%;
   padding: 0;
   font-size: 20px;
+  font-weight: bold;
+  color: rgb(9, 9, 9);
 }
 .header__navigation .header__logo {
   margin-left: 10%;
@@ -110,14 +203,18 @@ header {
 }
 
 * {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   box-sizing: border-box;
   font-weight: 400;
 }
 
+html {
+  margin: 0;
+}
+
 body {
   margin: 0;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */
