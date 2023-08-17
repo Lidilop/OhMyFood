@@ -3,12 +3,6 @@
 .steps {
   margin: 0 10% 0 0;
 }
-.steps h2 {
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 10%;
-  margin-left: 5%;
-}
 .steps__button {
   display: flex;
   flex-direction: column;
@@ -51,47 +45,69 @@
   color: rgb(120, 118, 118);
   transition: 0.3s;
 }
-.steps__btn h3 {
-  font-size: 17px;
-  font-weight: bold;
-  margin: 0 0 0 2%;
-  padding: 5% 5%;
-}
 .steps__btn:hover {
   background-color: #f4d4ee;
 }
 
 .restaurants {
-  padding: 0;
-  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px 0;
   background-color: #f6f6f6;
+}
+.restaurants .restaurants__cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.restaurants .restaurants__cards .restaurants__rest-cards {
   display: flex;
   flex-wrap: wrap;
-}
-.restaurants__cards {
-  max-width: 500px;
-  margin: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  width: 330px;
-  margin: auto;
-  display: block;
-  color: inherit;
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  flex-direction: column;
-}
-.restaurants h2 {
-  font-size: 25px;
-  font-weight: bold;
-  margin-left: 5%;
-}
-.restaurants__rest-cards {
-  display: flex;
-  flex-direction: column;
+  gap: 20px;
   justify-content: center;
-  align-items: center;
+  padding: 0 15px 0 15px;
+}
+
+.restaurants__cardnew {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  background-color: #fff;
+  border-radius: 20px;
+  width: 100%;
+}
+.restaurants__cardnew a {
+  text-decoration: none;
+}
+.restaurants__cardnew .new__btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.restaurants__cardnew .new__btn button {
+  background-color: #99e2d0;
+  color: #028867;
+  border: none;
+  padding: 5px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.restaurants__cardnew img {
+  border-radius: 15px 15px 0 0;
+  width: 300px;
+  height: 150px;
+  object-fit: cover;
+}
+.restaurants__cardnew .restaurants__intro {
+  text-align: center;
+  margin-top: 10px;
+  width: 100%;
+}
+.restaurants__cardnew .restaurants__intro .restaurants__text {
+  text-align: left;
+  margin-left: 25px;
 }
 
 footer {
@@ -103,13 +119,6 @@ footer {
 footer .footer {
   width: 400px;
   margin-left: 20px;
-}
-footer h3 {
-  color: #fff;
-  font-size: 30px;
-  font-family: "Shrikhand";
-  margin: 30px 0 0 0px;
-  padding: 20px;
 }
 footer ul {
   margin-top: 5px;
@@ -139,11 +148,11 @@ header {
   gap: 0.75rem;
   height: auto;
   padding: 5% 5%;
-}
-.header__hero h1 {
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 10%;
+  /*h1 {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10%;
+  }*/
 }
 .header__hero button {
   background: linear-gradient(to top, #9356dc, #ff79da);
@@ -202,6 +211,37 @@ header {
   z-index: -1;
 }
 
+.heart__icon {
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-size: 30px;
+  position: relative;
+  left: 120px;
+  bottom: 30px;
+}
+.heart__icon .far {
+  opacity: 1;
+  color: rgb(120, 118, 118);
+}
+.heart__icon .fas {
+  opacity: 0;
+  background: -webkit-linear-gradient(#ff79da, #9356dc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition: opacity 0.5s;
+}
+.heart__icon:hover .far, .heart__icon:active .far {
+  opacity: 0;
+}
+.heart__icon:hover .fas, .heart__icon:active .fas {
+  opacity: 1;
+}
+
 * {
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
@@ -215,6 +255,54 @@ html {
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
+}
+
+.header__hero h1 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10%;
+}
+
+footer h3 {
+  color: #fff;
+  font-size: 30px;
+  font-family: "Shrikhand";
+  margin: 0;
+  padding: 20px;
+}
+
+.steps h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10%;
+  margin-left: 5%;
+}
+.steps__btn h3 {
+  font-size: 17px;
+  font-weight: bold;
+  margin: 0 0 0 2%;
+  padding: 5% 5%;
+}
+
+.restaurants h2 {
+  align-items: flex-start;
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 5%;
+  margin-left: 5%;
+}
+
+.restaurants__cardnew .restaurants__intro h3 {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 2px 0 2px -10px;
+  color: black;
+}
+.restaurants__cardnew .restaurants__intro p {
+  font-size: 14px;
+  margin: 0;
+  margin-left: -10px;
+  color: rgb(120, 118, 118);
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,37 @@
+.heart__icon {
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-size: 30px;
+    position: relative;
+    left: 120px;
+    bottom: 30px;
+
+
+    .far {
+        opacity: 1;
+        color: rgb(120, 118, 118);
+    }
+
+    .fas {
+        opacity: 0;
+        background: -webkit-linear-gradient($color-2, $color-1);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        transition: opacity 0.5s;
+    }
+
+    &:hover, &:active {
+        .far {
+            opacity: 0;
+        }
+
+        .fas {
+            opacity: 1;
+        }
+    }
+}
