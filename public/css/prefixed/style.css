@@ -1,5 +1,99 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+.hero__img {
+  height: 200px;
+  position: relative;
+}
+.hero__img img {
+  height: auto;
+  object-fit: cover;
+  width: 100%;
+  z-index: -1;
+  margin: 0;
+}
+
+.container {
+  background-color: #f6f6f6;
+  margin: 0;
+  border-radius: 20px;
+  width: 100%;
+  position: relative;
+}
+.container .menu_head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container h1 {
+  font-size: 25px;
+  font-family: "Shrikhand";
+  padding: 10px 0 0 20px;
+}
+.container .menus__plater {
+  margin: 5%;
+}
+.container .menus__plater .menu__pl h2 {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: rgb(120, 118, 118);
+}
+.container .menus__plater .menu__pl h2:after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 50%;
+  height: 3px;
+  background-color: #99e2d0;
+}
+.container .menus__plater .menu__pl .menu__plate1 {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 2px 5px;
+  margin: 10px 0;
+  position: relative;
+  width: 100%;
+  box-shadow: -6px 5px 11px 5px rgba(216, 216, 216, 0.46);
+  animation: fadeInUp 1s ease-in-out;
+  opacity: 1;
+  transition: 0.3s;
+}
+.container .menus__plater .menu__pl .menu__plate1 h3 {
+  font-size: 16px;
+  padding-top: 10px;
+  padding-left: 5px;
+  margin: 0;
+}
+.container .menus__plater .menu__pl .menu__plate1 h4 {
+  font-size: 15px;
+  color: rgba(48, 47, 47, 0.46);
+  padding-bottom: 10px;
+  padding-left: 5px;
+  margin: 0;
+}
+.container .menus__plater .menu__pl .menu__plate1 .menu__price {
+  float: right;
+  margin-top: -30px;
+  padding-right: 10px;
+  opacity: 1;
+  transition: 0.3s;
+}
+.container .btn__order {
+  background: linear-gradient(to top, #9356dc, #ff79da);
+  color: #f5edff;
+  font-size: 15px;
+  align-items: center;
+  justify-content: center;
+  padding: 4% 9%;
+  margin: 7% 35%;
+  border: none;
+  border-radius: 20px;
+  font-weight: 500;
+  box-shadow: 0px 7px 17px 2px #d3cdd2;
+}
+
 .steps {
   margin: 0 10% 0 0;
 }
@@ -7,12 +101,6 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-}
-@media (max-width: 992px) {
-  .steps__button {
-    flex-direction: column;
-    padding: 1rem;
-  }
 }
 .steps__btn {
   margin: 5%;
@@ -148,11 +236,6 @@ header {
   gap: 0.75rem;
   height: auto;
   padding: 5% 5%;
-  /*h1 {
-      font-size: 20px;
-      font-weight: bold;
-      margin-bottom: 10%;
-  }*/
 }
 .header__hero button {
   background: linear-gradient(to top, #9356dc, #ff79da);
@@ -204,21 +287,20 @@ header {
   padding-top: 0;
 }
 
-.hero__img img {
-  height: 15rem;
-  object-fit: cover;
-  width: 100%;
-  z-index: -1;
-}
-
 .heart__icon {
   display: inline-flex;
   justify-content: flex-end;
   align-items: flex-end;
-  font-size: 30px;
+  font-size: 28px;
+  padding: 2px;
   position: relative;
-  left: 120px;
-  bottom: 30px;
+  left: 100px;
+  bottom: 40px;
+}
+.heart__icon.m {
+  position: relative;
+  margin-top: 80px;
+  margin-right: 140px;
 }
 .heart__icon .far {
   opacity: 1;
@@ -242,6 +324,70 @@ header {
   opacity: 1;
 }
 
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  position: fixed;
+  opacity: 0.98;
+  background-color: #fff;
+  -webkit-animation: loading 3s ease-in-out forwards;
+  animation: loading 3s ease-in-out forwards;
+}
+
+.circle {
+  width: 160px;
+  height: 160px;
+  margin: 50px;
+  border-radius: 50%;
+  box-shadow: 0 4px 0 0 #e15b64;
+  transform-origin: 80px 82px;
+  transform: rotate(0deg);
+  -webkit-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+}
+
+@-webkit-keyframes loading {
+  0% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+@keyframes loading {
+  0% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 * {
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
@@ -303,6 +449,11 @@ footer h3 {
   margin: 0;
   margin-left: -10px;
   color: rgb(120, 118, 118);
+}
+
+/*menu pages */
+.menu_head h1 {
+  margin: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

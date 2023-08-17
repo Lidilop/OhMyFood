@@ -1,0 +1,102 @@
+.hero__img {
+
+    height: 200px;
+    position: relative;
+	img {
+        height: auto;
+		object-fit: cover;
+		width: 100%;
+		z-index: -1;
+        margin:0;
+	}
+}
+.container{
+    background-color: $color-bckgrd;
+    margin: 0;
+    border-radius: 20px;
+    width: 100%;
+    position: relative;
+    .menu_head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    h1 {
+        font-size: 25px;
+        font-family: 'Shrikhand';
+        padding: 10px 0 0 20px;
+
+    }
+    .menus__plater{
+        margin: 5%;
+        .menu__pl{
+            h2{
+                display: inline-block;
+                position: relative;
+                margin-bottom: 20px;
+                font-size: 20px;
+                color: rgb(120, 118, 118);
+            }
+            h2:after {
+                content: "";
+                position: absolute;
+                bottom: -4px;
+                left: 0;
+                width: 50%;
+                height: 3px;
+                background-color: $color-3;
+            }
+            .menu__plate1 {
+                background-color: $color-white;
+                border-radius: 15px;
+                padding: 2px 5px;
+                margin: 10px 0;
+                position: relative;
+                width: 100%;
+                box-shadow: -6px 5px 11px 5px rgba(216, 216, 216, 0.46);
+                animation: fadeInUp 1s ease-in-out;
+                opacity: 1;
+                transition: 0.3s;
+                h3 {
+                    font-size: 16px;
+                    padding-top: 10px;
+                    padding-left: 5px;
+                    margin: 0;
+                }
+                h4{
+                    font-size: 15px;
+                    color:rgba(48, 47, 47, 0.46);
+                    padding-bottom: 10px;
+                    padding-left: 5px;
+                    margin: 0;
+                }
+                .menu__price {
+                    float: right;
+                    margin-top: -30px;
+                    padding-right: 10px;
+                    opacity: 1;
+                    transition: 0.3s;
+                }
+
+            }
+
+        }
+    }
+    .btn__order {
+        background: linear-gradient(to top, $color-1, $color-2);
+        color: $color-1-1;
+        font-size: 15px;
+        align-items: center;
+        justify-content: center;
+        padding: 4% 9%;
+        margin: 7% 35%;
+        border: none;
+        border-radius: 20px;
+        font-weight: 500;
+        box-shadow: 0px 7px 17px 2px #d3cdd2;
+    }
+}
+
+
+
+

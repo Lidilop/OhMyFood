@@ -23,15 +23,15 @@
                     <img  class="header__logo" src="../public/images/logo/ohmyfood.png" alt="logo"/>
                 </div>
             </div>
-            <picture class="hero__img">
-                <img src="../public/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="plate with eggs benedict"/>
-            </picture>
         </header>
         <main>
+            <div class="hero__img">
+                <img src="../public/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="plate with eggs benedict"/>
+            </div>
             <div class="container menu">
                 <section class="menu_head">
                     <h1>Bastille</h1>
-                    <div class="heart">
+                    <div class="heart__icon m">
                         <i class="fa-heart far"></i>
                         <i class="fa-heart fas"></i>
                     </div>
@@ -40,15 +40,17 @@
                     <div class="menu__pl first">
                         <h2>ENTREES</h2>
                         <div class="menu__entrees">
-                            <div class="menu__plate-1">
+                            <div class="menu__plate1">
                                 <h3>Citrus Squid Carpaccio</h3>
                                 <h4>With orange zest</h4>
                                 <strong class="menu__price">25€</strong>
                                 <div class="overlay">
-                                    <i class="fas fa-check-circle check"></i>
+                                    <div class="overlay_ckeck">
+                                        <i class="fas fa-check-circle check"></i>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="menu__plate-1">
+                            <div class="menu__plate1">
                                 <h3>Grandmother's Vegetable Soup</h3>
                                 <h4>Carrots, parsnips, Jerusalem artichoke</h4>
                                 <strong class="menu__price">35€</strong>
@@ -56,7 +58,7 @@
                                     <i class="fas fa-check-circle check"></i>
                                 </div>
                             </div>
-                            <div class="menu__plate-1">
+                            <div class="menu__plate1">
                                 <h3>Onion Soup</h3>
                                 <h4>Revisited</h4>
                                 <strong class="menu__price">20€</strong>
@@ -98,7 +100,7 @@
                     <div class="menu__pl desserts">
                         <h2>DESSERTS</h2>
                         <div class="menu__desserts">
-                            <div class="menu__plater1">
+                            <div class="menu__plate1">
                                 <h3>Floral Ice Cream</h3>
                                 <h4>With hazelnut butter</h4>
                                 <strong class="menu__price">18€</strong>
@@ -106,7 +108,7 @@
                                     <i class="fas fa-check-circle check"></i>
                                 </div>
                             </div>
-                            <div class="menu__plater1">
+                            <div class="menu__plate1">
                                 <h3>Chocolate Lava Cake</h3>
                                 <h4>Revisited</h4>
                                 <strong class="menu__price">22€</strong>
@@ -114,7 +116,7 @@
                                     <i class="fas fa-check-circle check"></i>
                                 </div>
                             </div>
-                            <div class="menu__plater1">
+                            <div class="menu__plate1">
                                 <h3>Napolean</h3>
                                 <h4>With blueberries and marzipan</h4>
                                 <strong class="menu__price">23€</strong>
@@ -125,10 +127,11 @@
                         </div>
                     </div>
                 </section>
+                <div>
+                    <button class="btn__order btn">Order</button>
+                </div>
             </div>
-            <div>
-                <button class="btn__order btn">Order</button>
-            </div>
+
         </main>
         <footer>
             <div class="footer">
