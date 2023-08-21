@@ -1,5 +1,16 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .hero__img {
   height: 200px;
   position: relative;
@@ -23,11 +34,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-.container h1 {
-  font-size: 25px;
-  font-family: "Shrikhand";
-  padding: 10px 0 0 20px;
 }
 .container .menus__plater {
   margin: 5%;
@@ -57,8 +63,10 @@
   width: 100%;
   box-shadow: -6px 5px 11px 5px rgba(216, 216, 216, 0.46);
   animation: fadeInUp 1s ease-in-out;
-  opacity: 1;
-  transition: 0.3s;
+  opacity: 0;
+  transform: translateY(20px);
+  animation-fill-mode: both;
+  transition: opacity 0.3s, transform 0.3s;
 }
 .container .menus__plater .menu__pl .menu__plate1 h3 {
   font-size: 16px;
@@ -80,6 +88,15 @@
   opacity: 1;
   transition: 0.3s;
 }
+.container .menus__plater .menu__pl .menu__plate1:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.container .menus__plater .menu__pl .menu__plate1:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.container .menus__plater .menu__pl .menu__plate1:nth-child(3) {
+  animation-delay: 0.3s;
+}
 .container .btn__order {
   background: linear-gradient(to top, #9356dc, #ff79da);
   color: #f5edff;
@@ -92,6 +109,12 @@
   border-radius: 20px;
   font-weight: 500;
   box-shadow: 0px 7px 17px 2px #d3cdd2;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent; /* Aquí se establece la propiedad */
+  transition: background-color 0.3s;
+}
+.container .btn__order:hover {
+  background: linear-gradient(to top, #a674e2, #ff9de4);
 }
 
 .steps {
@@ -115,6 +138,7 @@
   box-shadow: 2px 2px 14px 0 #d0d0d0;
   font-weight: 500;
   position: relative;
+  cursor: pointer;
   transition: 0.3s;
 }
 .steps__btn .number {
@@ -247,6 +271,12 @@ header {
   border-radius: 20px;
   font-weight: 500;
   box-shadow: 0px 7px 17px 2px #d3cdd2;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent; /* Aquí se establece la propiedad */
+  transition: background-color 0.3s;
+}
+.header__hero button:hover {
+  background: linear-gradient(to top, #a674e2, #ff9de4);
 }
 .header__search {
   margin: 0;
@@ -287,6 +317,16 @@ header {
   padding-top: 0;
 }
 
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .heart__icon {
   display: inline-flex;
   justify-content: flex-end;
@@ -343,7 +383,7 @@ header {
   height: 160px;
   margin: 50px;
   border-radius: 50%;
-  box-shadow: 0 4px 0 0 #e15b64;
+  box-shadow: 0 4px 0 0 #9356dc;
   transform-origin: 80px 82px;
   transform: rotate(0deg);
   -webkit-animation: spin 1s linear infinite;
@@ -452,8 +492,12 @@ footer h3 {
 }
 
 /*menu pages */
-.menu_head h1 {
+.container .menu_head h1 {
   margin: 0;
+  margin-right: -80px;
+  font-size: 22px;
+  font-family: "Shrikhand";
+  padding: 10px 0 0 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -21,8 +21,13 @@ header {
             border-radius: 20px;
             font-weight: 500;
             box-shadow: 0px 7px 17px 2px #d3cdd2;
+            cursor: pointer;
+            -webkit-tap-highlight-color: transparent; /* Aquí se establece la propiedad */
+            transition: background-color 0.3s;
+            &:hover {
+                background: linear-gradient(to top, lighten($color-1, 7%), lighten($color-2, 7%));
+               }
         }
-
 	}
 	&__search {
         margin: 0;

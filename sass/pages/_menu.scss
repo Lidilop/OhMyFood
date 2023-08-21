@@ -1,3 +1,4 @@
+@import '../components/buttons';
 .hero__img {
 
     height: 200px;
@@ -21,12 +22,7 @@
         justify-content: space-between;
         align-items: center;
     }
-    h1 {
-        font-size: 25px;
-        font-family: 'Shrikhand';
-        padding: 10px 0 0 20px;
 
-    }
     .menus__plater{
         margin: 5%;
         .menu__pl{
@@ -55,8 +51,11 @@
                 width: 100%;
                 box-shadow: -6px 5px 11px 5px rgba(216, 216, 216, 0.46);
                 animation: fadeInUp 1s ease-in-out;
-                opacity: 1;
-                transition: 0.3s;
+                opacity: 0;
+                transform: translateY(20px);
+                animation-fill-mode: both;
+
+                transition: opacity 0.3s, transform 0.3s;
                 h3 {
                     font-size: 16px;
                     padding-top: 10px;
@@ -77,6 +76,9 @@
                     opacity: 1;
                     transition: 0.3s;
                 }
+                &:nth-child(1) { animation-delay: 0.1s; }
+                &:nth-child(2) { animation-delay: 0.2s; }
+                &:nth-child(3) { animation-delay: 0.3s; }
 
             }
 
@@ -94,6 +96,12 @@
         border-radius: 20px;
         font-weight: 500;
         box-shadow: 0px 7px 17px 2px #d3cdd2;
+        cursor: pointer;
+            -webkit-tap-highlight-color: transparent; /* Aquí se establece la propiedad */
+            transition: background-color 0.3s;
+            &:hover {
+                background: linear-gradient(to top, lighten($color-1, 7%), lighten($color-2, 7%));
+               }
     }
 }
 

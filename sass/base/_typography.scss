@@ -65,8 +65,14 @@ footer {
 
 /*menu pages */
 
-.menu_head{
-    h1{
-        margin: 0;
+.container{
+    .menu_head{
+        h1{
+            margin: 0;
+            margin-right: -80px;
+            font-size: 22px;
+            font-family: 'Shrikhand';
+            padding: 10px 0 0 20px;
+        }
     }
 }
