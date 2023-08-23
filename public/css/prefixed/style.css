@@ -12,38 +12,39 @@
     transform: translateY(0);
   }
 }
-/*animation check */
+/*animation check
+
 .menu__plate1:hover .overlay {
-  transform: translateX(0%);
-  transition: 0.5s ease;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+    transform: translateX(0%);
+    transition: 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-.menu__plate1:hover .overlay_ckeck {
-  -webkit-animation: check 0.5s ease forwards;
-  animation: check 0.5s ease forwards;
-  transform: translateX(0);
-  transition: transform 0.3s ease-in-out;
-}
+  .menu__plate1:hover .overlay_ckeck {
+    -webkit-animation: check 0.5s ease forwards;
+    animation: check 0.5s ease forwards;
+    transform: translateX(0);
+    transition: transform 0.3s ease-in-out;
+  }
 
-@-webkit-keyframes check {
-  0% {
-    transform: rotate(0deg);
+  @-webkit-keyframes check {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
   }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@keyframes check {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
+  @keyframes check {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }*/
 .hero__img {
   height: 200px;
   position: relative;
@@ -101,47 +102,68 @@
   animation-fill-mode: both;
   cursor: pointer;
   transition: opacity 0.3s, transform 0.3s;
+  /*.overlay_check .fas{
+      -webkit-font-smoothing: antialiased;
+      display: inline-block;
+      font-style: normal;
+      font-variant: normal;
+      text-rendering: auto;
+      line-height: 1;
+  }*/
 }
 .container .menus__plater .menu__pl .menu__plate1 .menu__text {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  flex: 1;
   -webkit-box-flex: 1;
   flex: 1;
   padding: 15px 0 15px 10px;
 }
 .container .menus__plater .menu__pl .menu__plate1 .menu__text h3 {
+  margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
   font-size: 16px;
   padding-top: 10px;
   padding-left: 5px;
   margin: 0;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
   margin-bottom: 7px;
   display: block;
 }
 .container .menus__plater .menu__pl .menu__plate1 .menu__text p {
+  margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
   font-size: 15px;
   color: rgba(48, 47, 47, 0.46);
   padding-bottom: 10px;
   padding-left: 5px;
   margin: 0;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
   display: block;
 }
 .container .menus__plater .menu__pl .menu__plate1 .menu__price {
-  /*align-self: flex-end;
-  margin-left: 5px;
-  margin-right: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-end;
+  padding-left: 0.5rem;
   padding-bottom: 15px;
-  font-weight: bold;*/
   float: right;
-  margin-top: -30px;
+  margin-top: -28px;
   padding-right: 10px;
   opacity: 1;
   transition: 0.3s;
 }
 .container .menus__plater .menu__pl .menu__plate1 .overlay {
+  background-color: #99e2d0;
+  margin: -1rem -5rem -1rem 1rem;
+  width: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.5s;
   /*background: #9ae3d1;
   margin-right: -60px;
   width: 59px;
@@ -154,16 +176,28 @@
   -webkit-box-pack: center;
   justify-content: center;
   transition: all 0.5s ease;*/
-  position: absolute;
+  /*position: absolute;
   top: 50%;
   right: 0;
   transform: translateY(-50%);
   width: 30px;
-  overflow: hidden;
+  overflow: hidden;*/
+}
+.container .menus__plater .menu__pl .menu__plate1:hover .container .menus__plater .menu__pl .menu__plate1.overlay {
+  margin-right: -1rem;
 }
 .container .menus__plater .menu__pl .menu__plate1 .overlay_check {
+  height: 1.6rem;
+  width: 1.6rem;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
   transform: rotate(180deg);
-  transition: all 0.7s ease;
+  transition-duration: 0.5s;
+  /*transform: rotate(180deg);
+  transition: all 0.7s ease;*/
   /*transform: translateX(100%);
   transition: transform 0.3s ease-in-out;
   display: flex;
@@ -175,21 +209,19 @@
   color: white;
   opacity: 1;*/
 }
-.container .menus__plater .menu__pl .menu__plate1 .overlay_check .fas {
-  -webkit-font-smoothing: antialiased;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  line-height: 1;
+.container .menus__plater .menu__pl .menu__plate1:hover .container .menus__plater .menu__pl .menu__plate1.overlay_check {
+  transform: rotate(0);
 }
-.container .menus__plater .menu__pl .menu__plate1:nth-child(1) {
+.container .menus__plater .menu__pl .menu__plate1i {
+  color: #028867;
+}
+.container .menus__plater .menu__pl:nth-child(1) {
   animation-delay: 0.1s;
 }
-.container .menus__plater .menu__pl .menu__plate1:nth-child(2) {
+.container .menus__plater .menu__pl:nth-child(2) {
   animation-delay: 0.2s;
 }
-.container .menus__plater .menu__pl .menu__plate1:nth-child(3) {
+.container .menus__plater .menu__pl:nth-child(3) {
   animation-delay: 0.3s;
 }
 .container .btn__order {
@@ -424,38 +456,39 @@ header {
     transform: translateY(0);
   }
 }
-/*animation check */
+/*animation check
+
 .menu__plate1:hover .overlay {
-  transform: translateX(0%);
-  transition: 0.5s ease;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+    transform: translateX(0%);
+    transition: 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-.menu__plate1:hover .overlay_ckeck {
-  -webkit-animation: check 0.5s ease forwards;
-  animation: check 0.5s ease forwards;
-  transform: translateX(0);
-  transition: transform 0.3s ease-in-out;
-}
+  .menu__plate1:hover .overlay_ckeck {
+    -webkit-animation: check 0.5s ease forwards;
+    animation: check 0.5s ease forwards;
+    transform: translateX(0);
+    transition: transform 0.3s ease-in-out;
+  }
 
-@-webkit-keyframes check {
-  0% {
-    transform: rotate(0deg);
+  @-webkit-keyframes check {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
   }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@keyframes check {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
+  @keyframes check {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }*/
 .heart__icon {
   display: inline-flex;
   justify-content: flex-end;
@@ -572,7 +605,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.header__hero h1 {
+.header__hero h2 {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 10%;
