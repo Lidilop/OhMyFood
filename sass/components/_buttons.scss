@@ -10,38 +10,5 @@
     }
 }
 
-/*animation check*/
 
-
-.menu__plate1:hover .overlay {
-    transform: translateX(0%);
-    transition: 0.5s ease;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .menu__plate1:hover .overlay_ckeck {
-    -webkit-animation: check 0.5s ease forwards;
-    animation: check 0.5s ease forwards;
-    transform: translateX(0);
-    transition: transform 0.3s ease-in-out;
-  }
-
-  @-webkit-keyframes check {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  @keyframes check {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
 
