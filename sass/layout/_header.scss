@@ -9,9 +9,9 @@ header {
 		flex-direction: column;
 		gap: 0.75rem;
 		height: auto;
-		padding: 5% 5%;
+		padding: 10% 5%;
 
-        button{
+        .button_link{
             background: linear-gradient(to top, $color-1, $color-2);
             color: $color-1-1;
             font-size: 15px;
@@ -19,6 +19,7 @@ header {
             margin: 7% 0%;
             border: none;
             border-radius: 20px;
+            text-decoration: none;
             font-weight: 500;
             box-shadow: 0px 7px 17px 2px #d3cdd2;
             cursor: pointer;
@@ -69,7 +70,29 @@ header {
     }
 }
 
+@media only screen and (min-width: map-get($breakpoints, tablet)){
 
+    .header{
+        justify-content: center;
+        &__logo {
+            align-items: center;
+            margin: 0 10%;
+            padding: 2%;
+            width: 25%;
+        }
+        &__hero {
+            gap: 10px;
+            height: auto;
+            padding: 5% 2%;
+
+            .button_link{
+                font-size: 17px;
+                padding: 1%;
+                margin: 5% 15%;
+            }
+        }
+    }
+}
 
 
 

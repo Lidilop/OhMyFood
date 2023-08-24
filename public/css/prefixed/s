@@ -245,7 +245,6 @@
   box-shadow: 2px 2px 14px 0 #d0d0d0;
   border-radius: 20px;
   width: 100%;
-  max-width: 300px;
 }
 .restaurants__cardnew a {
   text-decoration: none;
@@ -288,21 +287,36 @@
     margin-top: 0;
   }
   .steps__btn {
-    padding: 1%;
-  }
-  .restaurants__cards .restaurants__rest-cards {
+    margin: 5%;
+    padding: 2%;
+    display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    background-color: #f6f6f6;
+    border-radius: 20px;
+    box-shadow: 2px 2px 14px 0 #d0d0d0;
+    font-weight: 500;
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s;
   }
-  .restaurants__cards .restaurants__rest-cards .restaurants__cardnew {
-    width: calc(50% - 90px);
-    margin: 0;
+  .steps__btn .number {
+    color: #fff;
+    background-color: #9356dc;
+    border-radius: 20px;
+    padding: 3px 7px;
+    font-size: 13px;
+    font-weight: 400;
+    position: absolute;
+    left: -10px;
   }
-  .restaurants__cards .restaurants__rest-cards .restaurants__cardnew img {
-    height: 150px;
-    object-fit: cover;
+  .steps__btn .fa-solid {
+    margin-left: 7%;
+    font-size: 15px;
+    color: rgb(120, 118, 118);
+    transition: 0.3s;
   }
 }
 footer {
@@ -638,13 +652,9 @@ footer h3 {
   .header__hero p {
     margin-bottom: 5%;
   }
-  .steps {
-    margin-right: 0;
-  }
   .steps h2 {
     text-align: center;
-    margin-bottom: 0 !important;
-    margin-left: 0;
+    margin-bottom: 0;
   }
   .steps__btn h3 {
     font-size: 17px;
@@ -657,4 +667,4 @@ footer h3 {
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=s.map */

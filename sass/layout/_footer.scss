@@ -13,6 +13,8 @@ footer {
       margin-left: 20px;
       padding: 0;
       list-style-type: none;
+      display: flex;
+      flex-direction: column;
     }
     & li {
       padding: 10px;
@@ -26,5 +28,25 @@ footer {
       padding-right:10px;
     }
   }
+  @media only screen and (min-width: map-get($breakpoints, tablet)) {
+    footer {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .footer{
+        width: 900px;
+        justify-content: center;
+      }
 
+      ul {
+        margin-left: 0;
+        padding: 10px;
+        flex-direction: row;
+        justify-content: space-between;
+
+      }
+    }
+
+  }
 

@@ -75,6 +75,7 @@
     box-shadow: 2px 2px 14px 0 #d0d0d0;
     border-radius: 20px;
     width: 100%;
+    max-width: 300px;
 
     a {
         text-decoration: none;
@@ -113,4 +114,43 @@
 
 }
 
+@media only screen and (min-width: map-get($breakpoints, tablet)) {
+
+    .steps {
+        &__button {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-right: 0;
+            margin-top: 0;
+        }
+        &__btn {
+            padding: 1%;
+        }
+    }
+    .restaurants__cards {
+        .restaurants__rest-cards {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+
+            .restaurants__cardnew {
+                width: calc(50% - 90px);
+                margin: 0;
+
+                img {
+                    height: 150px;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+
+
+
+
+
+
+}
 
