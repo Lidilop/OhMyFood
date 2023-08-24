@@ -172,6 +172,16 @@
   background: linear-gradient(to top, #a674e2, #ff9de4);
 }
 
+@media only screen and (min-width: 768px) {
+  .container .btn__order {
+    font-size: 17px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 3% 10%;
+    margin: 7% 40%;
+  }
+}
 .steps {
   margin: 0 10% 0 0;
 }
@@ -440,6 +450,11 @@ header {
     font-size: 17px;
     padding: 1%;
     margin: 5% 15%;
+  }
+  .header__navigation .header__logo {
+    margin-left: 5%;
+    padding-top: 0;
+    width: 25%;
   }
 }
 /* animation menu page */

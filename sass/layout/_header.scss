@@ -91,6 +91,13 @@ header {
                 margin: 5% 15%;
             }
         }
+        &__navigation {
+            .header__logo{
+                margin-left: 5%;
+                padding-top: 0;
+                width: 25%;
+               }
+        }
     }
 }
 
