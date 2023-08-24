@@ -130,8 +130,8 @@
   width: 65px;
   transform-origin: right 50%;
   border-radius: 0px 15px 15px 0px;
-  overflow: hidden;
   transform: translateX(65px);
+  overflow: hidden;
   transition-duration: 0.5s;
 }
 .container .menus__plater .menu__pl .menu__plate1 .overlay_ckeck {
