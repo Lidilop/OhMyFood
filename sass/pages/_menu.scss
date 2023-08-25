@@ -176,6 +176,9 @@
 }
 
 @media only screen and (min-width: map-get($breakpoints, tablet)){
+    .hero__img {
+        height: 450px;
+    }
     .container{
         .btn__order {
             font-size: 17px;
