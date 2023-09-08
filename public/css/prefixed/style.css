@@ -492,6 +492,9 @@ header {
   margin-top: 80px;
   margin-right: 140px;
 }
+.heart__iconi {
+  transition: opacity 3s ease-in-out;
+}
 .heart__icon .far {
   opacity: 1;
   color: rgb(120, 118, 118);
@@ -503,12 +506,14 @@ header {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   position: absolute;
-  left: 0;
-  bottom: 0;
+  left: 2px;
+  bottom: 2px;
   transition: opacity 0.5s;
 }
-.heart__icon:hover .far, .heart__icon:active .far {
-  opacity: 0;
+.heart__icon:hover, .heart__icon:active {
+  /*.far {
+      opacity: 0;
+  }*/
 }
 .heart__icon:hover .fas, .heart__icon:active .fas {
   opacity: 1;
