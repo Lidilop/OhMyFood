@@ -73,8 +73,8 @@ footer {
     .menu_head{
         h1{
             margin: 0;
-            margin-right: -80px;
-            font-size: 22px;
+            margin-top: 20px;
+            font-size: 28px;
             font-family: 'Shrikhand';
             padding: 10px 0 0 20px;
         }
@@ -109,9 +109,27 @@ footer {
             }
         }
     }
+    .container{
+        .menu_head{
+            h1{
+                margin-left: 30px;
+                font-size: 40px;
+            }
+        }
+    }
     .footer{
         h3{
             text-align: center;
           }
+    }
+}
+@media only screen and (min-width: map-get($breakpoints, desktop)) {
+    .container{
+        .menu_head{
+            h1{
+                margin-left: 40px;
+                font-size: 40px;
+            }
+        }
     }
 }
