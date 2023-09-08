@@ -229,7 +229,10 @@
   transition: 0.3s;
 }
 .steps__btn:hover {
-  background-color: #f4d4ee;
+  background-color: #d5cbe2;
+}
+.steps__btn:hover .fa-solid {
+  color: #9356dc;
 }
 
 .restaurants {
