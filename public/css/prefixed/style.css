@@ -513,11 +513,6 @@ header {
   position: absolute;
   transition: opacity 0.5s;
 }
-.heart__icon:hover, .heart__icon:active {
-  /*.far {
-      opacity: 0;
-  }*/
-}
 .heart__icon:hover .fas, .heart__icon:active .fas {
   opacity: 1;
 }
