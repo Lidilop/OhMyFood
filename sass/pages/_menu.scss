@@ -56,6 +56,9 @@
                 box-shadow: -6px 5px 11px 5px rgba(216, 216, 216, 0.46);
                 overflow: hidden;
                 animation: fadeInUp 2s ease-in-out;
+                animation-fill-mode: forwards;
+                opacity: 0;
+                transform: translateY(20px);
 
                     &:hover .menu__text{
                         width: calc(100% - 65px);
@@ -146,9 +149,9 @@
                 }
 
             }
-                &:nth-child(1) { animation-delay: 0.1s; }
-                &:nth-child(2) { animation-delay: 0.2s; }
-                &:nth-child(3) { animation-delay: 0.3s; }
+            &:nth-child(1) .menu__plate1{ animation-delay: 0.1s; }
+            &:nth-child(2) .menu__plate1{ animation-delay: 1.4s; }
+            &:nth-child(3) .menu__plate1{ animation-delay: 2.9s; }
 
 
         }
