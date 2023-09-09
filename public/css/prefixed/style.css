@@ -229,7 +229,7 @@
   transition: 0.3s;
 }
 .steps__btn:hover {
-  background-color: #d5cbe2;
+  background-color: #f5edff;
 }
 .steps__btn:hover .fa-solid {
   color: #9356dc;
