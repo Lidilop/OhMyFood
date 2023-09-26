@@ -1,6 +1,9 @@
-# OhMyFood   link: https://lidilop.github.io/OhMyFood/
+# OhMyFood   
 
-How to run the project:
+# Link Page
+    https://lidilop.github.io/OhMyFood/
+
+# How to run the project:
 
     1. Install Node.js: Download and install Node.js from the official website at https://nodejs.org/en/.
 
