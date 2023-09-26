@@ -1,5 +1,5 @@
 # OhMyFood   
-
+    
 # Link Page
     https://lidilop.github.io/OhMyFood/
 
@@ -15,3 +15,5 @@
     4. Install Sass: npm install sass
 
     5. Compile sass:  sass sass/main.scss public/css/prefixed/style.css
+
+# Web developer - Skills Bootcamp - openclassrooms
